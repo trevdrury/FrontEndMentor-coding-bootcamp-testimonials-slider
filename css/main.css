@@ -48,6 +48,10 @@ a {
   flex-direction: column;
   margin-right: -4.5em;
   z-index: 1;
+  background-image: url('../assets/pattern-quotes.svg');
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: 15% top;
 }
 
 .slide-image {
@@ -134,11 +138,76 @@ a {
     font-size: 18px;
   }
 
+  .container {
+    padding: 2.5em;
+  }
+
+  .slide {
+    flex-direction: column-reverse;
+    text-align: center;
+    width: 100%;
+  }
+
+  .quote {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+
+  .slide-image {
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    margin: 0 auto;
+  }
+
+  .image {
+    position: relative;
+  }
+
+  .slide-image img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .slide-quote {
+    padding-top: 1.25em;
+    margin-right: 0;
+    justify-content: center;
+    align-items: center;
+    background-size: 80px;
+    background-position: top center;
+  }
+
+  .client-info {
+    flex-direction: column;
+    font-size: 0.833rem;
+    line-height: 1.11rem;
+    margin-top: 0.5em;
+  }
+
+  .nav {
+    width: 80px;
+    height: 40px;
+    left: calc(50% - 40px);
+    bottom: -16px;
+  }
+
   .attribution {
     font-size: 0.5rem;
   }
 
   .attribution a {
     font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 554px) {
+  .slide-image img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .slide-quote {
+    background-size: 60px;
   }
 }
